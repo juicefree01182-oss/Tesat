@@ -1,0 +1,216 @@
+
+
+/* أساسيات الصفحة */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tahoma', 'Segoe UI', Arial, sans-serif;
+    background: #eef2f7;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* الحاوية الرئيسية */
+.container {
+    max-width: 420px;
+    width: 100%;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin: 20px auto;
+}
+
+/* العناوين */
+h2 {
+    text-align: center;
+    color: #2c5282;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+h3 {
+    color: #4a5568;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+/* حقول الإدخال */
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #cbd5e0;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2b6cb0;
+    box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.1);
+}
+
+/* الأزرار العامة */
+button {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* أزرار المصادقة */
+.auth-btn {
+    background: #2b6cb0;
+    color: #fff;
+}
+
+.auth-btn:hover {
+    background: #2c5282;
+    transform: translateY(-2px);
+}
+
+.auth-btn.secondary {
+    background: #edf2f7;
+    color: #2d3748;
+    border: 1px solid #cbd5e0;
+}
+
+.auth-btn.secondary:hover {
+    background: #e2e8f0;
+}
+
+/* أزرار الإجراءات */
+.action-btn {
+    background: #38a169;
+    color: #fff;
+}
+
+.action-btn:hover {
+    background: #2f855a;
+    transform: translateY(-2px);
+}
+
+.action-btn.secondary {
+    background: #e53e3e;
+    color: #fff;
+}
+
+.action-btn.secondary:hover {
+    background: #c53030;
+}
+
+/* مجموعة الأزرار */
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-group button {
+    margin: 0;
+    flex: 1;
+}
+
+/* بطاقة المعلومات */
+.card {
+    background: #f7fafc;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+    border: 1px solid #e2e8f0;
+}
+
+.card:first-of-type {
+    background: linear-gradient(135deg, #f7fafc 0%, #ebf8ff 100%);
+}
+
+/* الرصيد */
+.balance {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2f855a;
+    text-align: center;
+    margin: 10px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#account {
+    text-align: center;
+    color: #4a5568;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* زر تسجيل الخروج */
+.logout-btn {
+    background: #e53e3e;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.logout-btn:hover {
+    background: #c53030;
+    transform: translateY(-2px);
+}
+
+/* إخفاء العناصر */
+.hidden {
+    display: none !important;
+}
+
+/* رسائل التنبيه */
+.alert {
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.alert.success {
+    background: #c6f6d5;
+    color: #22543d;
+    border: 1px solid #9ae6b4;
+}
+
+.alert.error {
+    background: #fed7d7;
+    color: #742a2a;
+    border: 1px solid #fc8181;
+}
+
+/* تصميم متجاوب */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .balance {
+        font-size: 28px;
+    }
+    
+    button, input {
+        padding: 10px 12px;
+    }
+}
